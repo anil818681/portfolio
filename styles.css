@@ -3,32 +3,35 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
+    overflow-x: hidden;
 }
 
 .sidebar {
     width: 250px;
     min-height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #01ad18;
     color: white;
+    padding-top: 50px;
+    transition: 0.3s ease-in-out;
 }
 
 .sidebar h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
-}
-
-.main-content {
-    margin-left: 250px;
-    padding-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .nav-link {
-    padding: 10px 15px;
+    padding: 10px 20px;
     display: block;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
 }
 
 .nav-link:hover {
@@ -36,58 +39,121 @@ body {
     color: #ffc107;
 }
 
+.main-content {
+    margin-left: 250px;
+    padding: 50px 30px 30px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 #home {
-    background: linear-gradient(to right, #07d16c, #a9ce08);
+    background: linear-gradient(45deg, #07d16c, #a9ce08);
     color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 2rem 1rem;
 }
 
 #home h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 #home .btn {
-    font-size: 1rem;
-    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
     text-transform: uppercase;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#home .btn:hover {
+    background-color: #ff8f00;
+}
+
+#about {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 50px 30px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#about .col-md-4 img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#about .col-md-8 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#about .row {
+    margin-top: 30px;
 }
 
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.progress-bar {
+#typing-text {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-}
-
-#home .mt-4 a {
-    color: white;
-    margin: 0 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-#home .mt-4 a:hover {
     color: #ffc107;
-    transform: scale(1.2);
+    margin-top: 15px;
+    display: inline-block;
+    animation: typing 3.5s steps(30) infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .sidebar {
         width: 100%;
-        height: auto;
         position: relative;
+        height: auto;
     }
 
     .main-content {
@@ -95,17 +161,11 @@ body {
     }
 
     #home h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     #home .btn {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0.6rem 1.5rem;
     }
-}
-
-#portfolio img {
-    width: 100%;
-   height: auto;
-    object-fit: cover;
 }
