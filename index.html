@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anil Varikuppala | Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add Bootstrap JS and Popper.js for Modal functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -323,7 +324,7 @@
                                                 <h5>Predicting Housing Prices Using Machine Learning</h5>
                                                 <p>Using machine learning to predict housing prices based on features
                                                     like area, number of bedrooms, and amenities.</p>
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal1"
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal3"
                                                     class="btn btn-primary">View Details</a>
                                             </div>
                                         </div>
@@ -336,7 +337,7 @@
                                                 <h5>US Banking Dashboard - Tableau</h5>
                                                 <p>An interactive dashboard to analyze trends, risks, and geographical
                                                     distribution in the US banking sector.</p>
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal2"
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal4"
                                                     class="btn btn-primary">View Details</a>
                                             </div>
                                         </div>
@@ -349,7 +350,7 @@
                                                 <h5>Power BI Projects</h5>
                                                 <p>Created various Power BI dashboards and reports for business
                                                     intelligence and financial analysis.</p>
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal3"
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal5"
                                                     class="btn btn-primary">View Details</a>
                                             </div>
                                         </div>
@@ -363,7 +364,7 @@
                                                 <h5>Predicting Crash Severity Using Machine Learning</h5>
                                                 <p>Applied machine learning models to predict the severity of car
                                                     crashes based on various features.</p>
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal4"
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal6"
                                                     class="btn btn-primary">View Details</a>
                                             </div>
                                         </div>
@@ -377,10 +378,11 @@
                                                 <h5>Data Processing Model to Perform Big Data Analytics</h5>
                                                 <p>Developed a hybrid data processing model combining cloud and
                                                     volunteer computing for big data analytics.</p>
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal5"
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal7"
                                                     class="btn btn-primary">View Details</a>
                                             </div>
                                         </div>
+
                                     </div>
 
                                     <!-- Carousel Controls -->
@@ -397,6 +399,7 @@
                                 </div>
                             </div>
                         </section>
+
 
                         <!-- Certifications Section with Image Slider -->
                         <section id="certifications" class="p-5">
@@ -505,7 +508,7 @@
                         </section>
 
 
-                        <!-- Modals for Projects -->
+                        <!-- Modal for Restaurant Management System -->
                         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1"
                             aria-hidden="true">
                             <div class="modal-dialog">
@@ -519,10 +522,8 @@
                                     <div class="modal-body">
                                         <i class="fas fa-utensils fa-3x text-primary"></i>
                                         <p>The Restaurant Management System is a web-based application designed to
-                                            optimize and
-                                            streamline restaurant operations. It includes features like handling
-                                            payments, updating
-                                            menus, and managing orders efficiently.</p>
+                                            optimize and streamline restaurant operations. It includes features like
+                                            handling payments, updating menus, and managing orders efficiently.</p>
                                         <p><strong>Key Features:</strong></p>
                                         <ul>
                                             <li>Efficient payment processing</li>
@@ -535,6 +536,7 @@
                             </div>
                         </div>
 
+                        <!-- Modal for Symptom-Based Disease Prediction -->
                         <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2"
                             aria-hidden="true">
                             <div class="modal-dialog">
@@ -548,10 +550,8 @@
                                     <div class="modal-body">
                                         <i class="fas fa-stethoscope fa-3x text-success"></i>
                                         <p>The Symptom-Based Disease Prediction System uses machine learning to predict
-                                            potential
-                                            diseases based on symptoms entered by the patient. It helps healthcare
-                                            providers make
-                                            faster, more accurate diagnoses.</p>
+                                            potential diseases based on symptoms entered by the patient. It helps
+                                            healthcare providers make faster, more accurate diagnoses.</p>
                                         <p><strong>Key Features:</strong></p>
                                         <ul>
                                             <li>Machine learning model development</li>
@@ -564,46 +564,99 @@
                             </div>
                         </div>
 
+                        <!-- Modal for Predicting Housing Prices Using Machine Learning -->
                         <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="projectModalLabel3">WeKare</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <i class="fas fa-user-friends fa-3x text-warning"></i>
-                                        <p>WeKare is a childcare platform connecting families with trusted caregivers.
-                                            The platform
-                                            enables families to find, book, and pay for childcare services, while also
-                                            offering
-                                            great career opportunities for professionals.</p>
-                                        <p><strong>Key Features:</strong></p>
-                                        <ul>
-                                            <li>Childcare services for all ages</li>
-                                            <li>Speech therapy and tutoring services</li>
-                                            <li>Secure platform for managing bookings and payments</li>
-                                            <li>Career opportunities for caregivers</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal for Predicting Crash Severity Using Machine Learning -->
-                        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="projectModalLabel4">Predicting Crash Severity Using
+                                        <h5 class="modal-title" id="projectModalLabel3">Predicting Housing Prices Using
                                             Machine Learning</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <i class="fas fa-car-crash fa-3x text-warning"></i>
+                                        <i class="fas fa-home fa-3x text-warning"></i>
+                                        <p>Using machine learning to predict housing prices based on features like area,
+                                            number of bedrooms, and amenities.</p>
+                                        <p><strong>Key Features:</strong></p>
+                                        <ul>
+                                            <li>Machine learning model for price prediction</li>
+                                            <li>Analysis of features like area, bedrooms, and amenities</li>
+                                            <li>Real-time price estimation</li>
+                                            <li>Improvement of housing market analysis</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal for US Banking Dashboard - Tableau -->
+                        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projectModalLabel4">US Banking Dashboard - Tableau
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="fas fa-university fa-3x text-primary"></i>
+                                        <p>An interactive dashboard to analyze trends, risks, and geographical
+                                            distribution in the US banking sector.</p>
+                                        <p><strong>Key Features:</strong></p>
+                                        <ul>
+                                            <li>Interactive data visualizations</li>
+                                            <li>Geographic and trend analysis</li>
+                                            <li>Risk assessment based on banking sector data</li>
+                                            <li>Integration with Tableau for real-time insights</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal for Power BI Projects -->
+                        <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projectModalLabel5">Power BI Projects</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="fas fa-chart-pie fa-3x text-warning"></i>
+                                        <p>Created various Power BI dashboards and reports for business intelligence and
+                                            financial analysis.</p>
+                                        <p><strong>Key Features:</strong></p>
+                                        <ul>
+                                            <li>Business intelligence report generation</li>
+                                            <li>Interactive dashboard creation</li>
+                                            <li>Data-driven decision-making tools</li>
+                                            <li>Financial and sales analytics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal for Predicting Crash Severity Using Machine Learning -->
+                        <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel6"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projectModalLabel6">Predicting Crash Severity Using
+                                            Machine Learning</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="fas fa-car-crash fa-3x text-danger"></i>
                                         <p>This project applies machine learning models to predict the severity of car
                                             crashes based on various features like weather, road conditions, and driver
                                             behavior.</p>
@@ -622,18 +675,18 @@
                         </div>
 
                         <!-- Modal for Data Processing Model to Perform Big Data Analytics -->
-                        <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5"
+                        <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModalLabel7"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="projectModalLabel5">Data Processing Model to Perform
+                                        <h5 class="modal-title" id="projectModalLabel7">Data Processing Model to Perform
                                             Big Data Analytics</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <i class="fas fa-database fa-3x text-primary"></i>
+                                        <i class="fas fa-database fa-3x text-info"></i>
                                         <p>This project involves the development of a hybrid data processing model that
                                             combines cloud computing and volunteer computing for performing big data
                                             analytics. It aims to efficiently analyze large datasets in a distributed
